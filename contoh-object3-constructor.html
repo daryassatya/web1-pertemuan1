@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // PERINGATAN !
+        // NONAKTIFKAN SALAH SATU OBJECT DENGAN MENG-KOMEN OBJECT TERSEBUT! AGAR DAPAT BERJALAN !
+
+        //  3.  Constructor function
+        function Mahasiswa(nama, energi) {
+            this.nama = nama;
+            this.energi = energi;
+
+            this.makan = function(porsi) {
+                this.energi += porsi;
+                console.log(`Halo, ${this.nama} Selamat  Makan! `); //string khusus untuk langsung menconcate
+            }
+
+            this.main = function(jam) {
+                this.energi -= jam;
+                console.log(`Halo, ${this.nama} Selamat  Bermain! `); //string khusus untuk langsung menconcate
+            }
+        }
+        let panggilObject1 = new Mahasiswa('Dimas Aryasatya', 10);
+
+        
+    </script>
+</body>
+
+</html>

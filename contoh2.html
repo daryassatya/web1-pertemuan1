@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh DOM JavaScript</title>
+</head>
+<body>
+    <p id="contohParagraf">Ini adalah contoh teks.</p>
+    <button id="tombolGantiTeks">Klik untuk mengubah teks</button>
+
+    <script>
+        // Mengakses elemen paragraf berdasarkan ID
+        var paragraf = document.getElementById("contohParagraf");
+
+        // Mengakses elemen tombol berdasarkan ID
+        var tombol = document.getElementById("tombolGantiTeks");
+
+        // Menambahkan event listener ke tombol
+        tombol.addEventListener("click", function() {
+            // Mengubah teks elemen paragraf
+            paragraf.innerHTML = "Teks telah diubah menggunakan event handler.";
+        });
+    </script>
+</body>
+</html>

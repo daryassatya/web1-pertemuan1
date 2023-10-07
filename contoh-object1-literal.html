@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  1.  Object literal
+
+        //  Kekurangannya adalah sangat tidak efisien
+        // dan harus memiliki nama yang berbeda pada setiap variabelnya
+        let mahasiswa = {
+            nama: "Dimas Aryasatya",
+            energi: 10,
+            makan: function(porsi) {
+                this.energi += porsi;
+                console.log(`Halo, ${this.nama} Selamat  Makan `); //string khusus untuk langsung menconcate
+            }
+        }
+    </script>
+</body>
+
+</html>
