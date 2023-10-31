@@ -11,7 +11,7 @@
         // PERINGATAN !
         // NONAKTIFKAN SALAH SATU OBJECT DENGAN MENG-KOMEN OBJECT TERSEBUT! AGAR DAPAT BERJALAN !
 
-        //  3.  Constructor function
+        //  3.  Constructor/Prototype function
         function Mahasiswa(nama, energi) {
             this.nama = nama;
             this.energi = energi;
@@ -26,8 +26,9 @@
                 console.log(`Halo, ${this.nama} Selamat  Bermain! `); //string khusus untuk langsung menconcate
             }
         }
-        let panggilObject1 = new Mahasiswa('Dimas Aryasatya', 10);
-
+        let dimas = new Mahasiswa('Dimas Aryasatya', 10);
+        let eko = new Mahasiswa('Eko', 10);
+        
         
     </script>
 </body>

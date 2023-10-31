@@ -4,7 +4,7 @@
 // 1. Standar Output
 //  echo, print
 // print_r
-// var_dump
+// var_dump();
 
 // contoh
 // echo "Dimas Aryasatya";
@@ -12,6 +12,7 @@
 // 2. Penulisan Sintaks PHP
 // penulisan php didalam html
 // penulisan html didalam php 
+
 
 // 3. Contoh penulisan variable dan tipe data
 $nama = "Dimas Aryasatya";
@@ -22,18 +23,20 @@ $umur = 20;
 $x = 10;
 $y = 20;
 $hasil = $x + $y;
+echo $hasil;
 
 // 5. Penggabungan String / Concatenation
 // .
-$namaDepan = "Dimas";
+$namaDepan = "Dimas ";
 $namaBelakang = "Aryasatya";
 $namaPanjang = $namaDepan . $namaBelakang;
 
 
 // 6. Operator Assignment
 //  =, +=, -=, /=, %=, .=
-$operatorTambah = 0;
-$operaotrTambah += 10;
+$operatorTambah = "Dimas";
+$operatorTambah .= "Aryasatya";
+
 
 // 7. Operator Perbandingan 
 // <, >, <=, >=, ==, !=
@@ -41,12 +44,14 @@ $operaotrTambah += 10;
 
 // 8. Operator Identitas
 // ===, !==
-// var_dump(1 === "1")
+// var_dump(1 == "1") //true
+// var_dump(1 === "1") //flase
 
 // 9. Logika
 //  &&, ||, !
 // $number = 10;
 // var_dump($x < 20 && $x > 5) // tidak dinyalakan kerena dapat memberhentikan program untuk debugging
+
 
 ?>
 
@@ -61,7 +66,6 @@ $operaotrTambah += 10;
 </head>
 <body>
     
-
     <!-- Contoh penulisan php didalam html -->
     <h1>Hello, nama saya <?= "Dimas";?></h1>
     
@@ -74,8 +78,6 @@ $operaotrTambah += 10;
     <h3>Hasil operator matematika : <?= $hasil;?></h3>
 
     <h3>Nama Panjang : <?= $namaPanjang;?></h3>
-
-    <h3>Contoh salah satu operator assignment : <?= $operatorTambah;?></h3>
 
     <h3>Contoh salah satu operator assignment : <?= $operatorTambah;?></h3>
 

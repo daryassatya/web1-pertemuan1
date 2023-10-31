@@ -7,13 +7,13 @@
 </head>
 
 <body>
-    <p id="elemenSaya"></p>
+    <p id="elemenSaya">Hello World</p>
 
     <script>
         // Mengakses dan mengatur properti
         var elemen = document.getElementById("elemenSaya");
-        var konten = elemen.innerHTML; // Mendapatkan konten elemen
         elemen.style.color = "red"; // Mengatur warna teks menjadi merah
+        var konten = elemen.innerText; // Mendapatkan konten elemen
     </script>
 </body>
 
